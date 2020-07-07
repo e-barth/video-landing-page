@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
+$color1: #fff;
+$color2: #FF8661;
+$color3: #08694F;
+$color4: #fdfdfd;
+
 :root {
-  --color-one: #fff;
-  --color-two: #FF8661;
-  --color-three: #08694F;
-  --color-four: #fdfdfd;
   font-size: 10px;
   scroll-behavior: smooth;
 }
@@ -30,7 +31,7 @@ body {
     margin-bottom: 15px;
   }
   section {
-    border-bottom: 3px solid var(--color-two);
+    border-bottom: 3px solid $color2;
   }
 }
 
@@ -43,7 +44,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 0 20px;
-  color: var(--color-one);
+  color: $color1;
 }
 
 .video-box {
@@ -53,7 +54,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: var(--color-three) url('./cover.jpg') no-repeat center center/cover;
+  background: $color3 url('./cover.jpg') no-repeat center center/cover;
   video {
     min-width: 100%;
     min-height: 100%;
@@ -81,9 +82,9 @@ body {
 .btn {
   display: inline-block;
   padding: 10px 30px;
-  background: var(--color-two);
-  color: var(--color-one);
-  border: 1px solid var(--color-one);
+  background: $color2;
+  color: $color1;
+  border: 1px solid $color1;
   border-radius: 5px;
   margin-top: 25px;
   opacity: 0.8;
@@ -94,7 +95,7 @@ body {
 }
 
 #about {
-  background: var(--color-four);
+  background: $color4;
   padding: 40px;
   text-align: center;
   p {
@@ -105,10 +106,10 @@ body {
   }
   h2 {
     margin: 30px 0;
-    color: var(--color-three);
+    color: $color3;
   }
   .social a {
     margin: 5px;
-    color: var(--color-two);
+    color: $color2;
   }
 }
